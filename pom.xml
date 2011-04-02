@@ -5,7 +5,7 @@
 	<artifactId>hadoop-client</artifactId>
 	<packaging>pom</packaging>
 	<name>hadoop-client</name>
-	<version>CDH3B4-1</version>
+	<version>CDH3B4-2-SNAPSHOT</version>
 
 	<inceptionYear>2011</inceptionYear>
 	<licenses>
