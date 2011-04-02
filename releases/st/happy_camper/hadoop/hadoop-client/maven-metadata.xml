@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>st.happy_camper.hadoop</groupId>
+  <artifactId>hadoop-client</artifactId>
+  <versioning>
+    <release>CDH3B4-1</release>
+    <versions>
+      <version>CDH3B4-1</version>
+    </versions>
+    <lastUpdated>20110402072203</lastUpdated>
+  </versioning>
+</metadata>
