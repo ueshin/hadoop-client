@@ -1,11 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>st.happy_camper.hadoop</groupId>
 	<artifactId>hadoop-client</artifactId>
 	<packaging>pom</packaging>
 	<name>hadoop-client</name>
-	<version>CDH3B4-2-SNAPSHOT</version>
+	<version>cdh3u0-1-SNAPSHOT</version>
 
 	<inceptionYear>2011</inceptionYear>
 	<licenses>
@@ -40,10 +41,10 @@
 	</issueManagement>
 
 	<properties>
-		<hadoop.version>0.20.2-CDH3B4</hadoop.version>
-		<zookeeper.version>3.3.2-CDH3B4</zookeeper.version>
-		<hbase.version>0.90.1-CDH3B4</hbase.version>
-		<flume.version>0.9.3-CDH3B4</flume.version>
+		<hadoop.version>0.20.2-cdh3u0</hadoop.version>
+		<zookeeper.version>3.3.3-cdh3u0</zookeeper.version>
+		<hbase.version>0.90.1-cdh3u0</hbase.version>
+		<flume.version>0.9.3-cdh3u0</flume.version>
 	</properties>
 
 	<dependencies>
