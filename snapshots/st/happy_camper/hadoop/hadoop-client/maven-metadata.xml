@@ -5,7 +5,8 @@
   <versioning>
     <versions>
       <version>CDH3B4-1-SNAPSHOT</version>
+      <version>cdh3u0-1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20110402071353</lastUpdated>
+    <lastUpdated>20110413133850</lastUpdated>
   </versioning>
 </metadata>
