@@ -3,11 +3,12 @@
   <groupId>st.happy_camper.hadoop</groupId>
   <artifactId>hadoop-client</artifactId>
   <versioning>
-    <release>cdh3u0-1</release>
+    <release>cdh3u0-2</release>
     <versions>
       <version>CDH3B4-1</version>
       <version>cdh3u0-1</version>
+      <version>cdh3u0-2</version>
     </versions>
-    <lastUpdated>20110413135124</lastUpdated>
+    <lastUpdated>20110711131923</lastUpdated>
   </versioning>
 </metadata>
