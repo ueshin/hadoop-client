@@ -9,6 +9,8 @@
 	<version>cdh3u1-2-SNAPSHOT</version>
 
 	<inceptionYear>2011</inceptionYear>
+	<url>http://ueshin.github.com/hadoop-client</url>
+	<description>Maven POM project for developing Hadoop clients.</description>
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0</name>
@@ -39,6 +41,16 @@
 		<system>GitHub</system>
 		<url>http://github.com/ueshin/hadoop-client/issues/</url>
 	</issueManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.0-beta-3</version>
+			</plugin>
+		</plugins>
+	</build>
 
 	<properties>
 		<hadoop.version>0.20.2-cdh3u1</hadoop.version>
@@ -350,6 +362,12 @@
 			<id>repository.cloudera.com</id>
 			<name>Cloudera Releases</name>
 			<url>https://repository.cloudera.com/content/repositories/releases</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
 	</repositories>
 
@@ -364,6 +382,10 @@
 			<url>http://ueshin.github.com/hadoop-client/snapshots</url>
 			<uniqueVersion>true</uniqueVersion>
 		</snapshotRepository>
+		<site>
+			<id>hadoop-client-site</id>
+			<url>http://ueshin.github.com/hadoop-client</url>
+		</site>
 	</distributionManagement>
 
 </project>
