@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>st.happy_camper.hadoop</groupId>
@@ -102,14 +103,6 @@
 						<artifactId>commons-net</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>org.mortbay.jetty</groupId>
-						<artifactId>jetty</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.mortbay.jetty</groupId>
-						<artifactId>jetty-util</artifactId>
-					</exclusion>
-					<exclusion>
 						<groupId>tomcat</groupId>
 						<artifactId>jasper-runtime</artifactId>
 					</exclusion>
@@ -144,6 +137,35 @@
 					<exclusion>
 						<groupId>org.eclipse.jdt</groupId>
 						<artifactId>core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.cloudera.cdh</groupId>
+						<artifactId>hadoop-ant</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-test</artifactId>
+				<version>${hadoop.version}</version>
+				<scope>test</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.ftpserver</groupId>
+						<artifactId>ftplet-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.mina</groupId>
+						<artifactId>mina-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.ftpserver</groupId>
+						<artifactId>ftpserver-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.ftpserver</groupId>
+						<artifactId>ftpserver-deprecated</artifactId>
 					</exclusion>
 					<exclusion>
 						<groupId>com.cloudera.cdh</groupId>
