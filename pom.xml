@@ -42,6 +42,10 @@
 		<url>http://github.com/ueshin/hadoop-client/issues/</url>
 	</issueManagement>
 
+	<modules>
+		<module>hadoop-client-scala</module>
+	</modules>
+
 	<build>
 		<plugins>
 			<plugin>
