@@ -5,15 +5,15 @@
   <version>cdh3u1-4-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20110911.051433</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20110911.073059</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
-    <lastUpdated>20110911051433</lastUpdated>
+    <lastUpdated>20110911073059</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>cdh3u1-4-20110911.051433-1</value>
-        <updated>20110911051433</updated>
+        <value>cdh3u1-4-20110911.073059-2</value>
+        <updated>20110911073059</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
