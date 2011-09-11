@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>st.happy_camper.hadoop</groupId>
+  <artifactId>hadoop-client-scala</artifactId>
+  <versioning>
+    <versions>
+      <version>cdh3u1-4-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20110911051433</lastUpdated>
+  </versioning>
+</metadata>
