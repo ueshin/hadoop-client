@@ -27,8 +27,8 @@ POMファイルに`parent`と`repository`を設定する。
 
 	<dependencies>
 		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-core</artifactId>
+			<groupId>org.apache.hbase</groupId>
+			<artifactId>hbase</artifactId>
 		</dependency>
 	</dependencies>
 
