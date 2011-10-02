@@ -89,6 +89,22 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<groupId>org.scala-lang</groupId>
+				<artifactId>scala-compiler</artifactId>
+				<version>${scala.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scala-lang</groupId>
+				<artifactId>jline</artifactId>
+				<version>${scala.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.fusesource.jansi</groupId>
+						<artifactId>jansi</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
 				<groupId>org.scala-tools.testing</groupId>
 				<artifactId>specs_2.9.1</artifactId>
 				<version>1.6.9</version>

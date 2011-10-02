@@ -33,13 +33,13 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:git@github.com:ueshin/hadoop-client.git</connection>
-		<developerConnection>scm:git:git@github.com:ueshin/hadoop-client.git</developerConnection>
+		<connection>scm:git://github.com/ueshin/hadoop-client.git</connection>
+		<developerConnection>scm:git@github.com:ueshin/hadoop-client.git</developerConnection>
 		<url>https://github.com/ueshin/hadoop-client</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>
-		<url>http://github.com/ueshin/hadoop-client/issues/</url>
+		<url>http://github.com/ueshin/hadoop-client/issues</url>
 	</issueManagement>
 
 	<modules>
@@ -71,6 +71,11 @@
 						</plugin>
 					</reportPlugins>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.7</version>
 			</plugin>
 		</plugins>
 		<pluginManagement>
