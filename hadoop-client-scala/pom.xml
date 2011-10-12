@@ -8,7 +8,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>hadoop-client-scala</artifactId>
-  <version>cdh3u1-6-SNAPSHOT</version>
+  <version>cdh3u1-5</version>
 	<packaging>pom</packaging>
 	<name>hadoop-client-scala</name>
 
