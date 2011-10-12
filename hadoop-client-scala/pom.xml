@@ -1,14 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<parent>
 		<groupId>st.happy_camper.hadoop</groupId>
 		<artifactId>hadoop-client</artifactId>
-		<version>cdh3u1-5</version>
+		<version>cdh3u1-5-SNAPSHOT</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>hadoop-client-scala</artifactId>
-  <version>cdh3u1-5</version>
 	<packaging>pom</packaging>
 	<name>hadoop-client-scala</name>
 
