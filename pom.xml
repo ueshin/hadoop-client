@@ -34,7 +34,7 @@
 	</developers>
 	<scm>
 		<connection>scm:git://github.com/ueshin/hadoop-client.git</connection>
-		<developerConnection>scm:git@github.com:ueshin/hadoop-client.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:ueshin/hadoop-client.git</developerConnection>
 		<url>https://github.com/ueshin/hadoop-client</url>
 	</scm>
 	<issueManagement>
