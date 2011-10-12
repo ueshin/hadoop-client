@@ -215,39 +215,52 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.16</version>
 		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.hamcrest</groupId>
+					<artifactId>hamcrest-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-test</artifactId>
+			<version>${hadoop.version}</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.ftpserver</groupId>
+					<artifactId>ftplet-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.mina</groupId>
+					<artifactId>mina-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.ftpserver</groupId>
+					<artifactId>ftpserver-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.ftpserver</groupId>
+					<artifactId>ftpserver-deprecated</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.cloudera.cdh</groupId>
+					<artifactId>hadoop-ant</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
 		<dependencies>
-
-			<dependency>
-				<groupId>org.apache.hadoop</groupId>
-				<artifactId>hadoop-test</artifactId>
-				<version>${hadoop.version}</version>
-				<scope>test</scope>
-				<exclusions>
-					<exclusion>
-						<groupId>org.apache.ftpserver</groupId>
-						<artifactId>ftplet-api</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.apache.mina</groupId>
-						<artifactId>mina-core</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.apache.ftpserver</groupId>
-						<artifactId>ftpserver-core</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.apache.ftpserver</groupId>
-						<artifactId>ftpserver-deprecated</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>com.cloudera.cdh</groupId>
-						<artifactId>hadoop-ant</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
 
 			<dependency>
 				<groupId>org.apache.hadoop</groupId>
@@ -370,6 +383,100 @@
 					<exclusion>
 						<groupId>commons-lang</groupId>
 						<artifactId>commons-lang</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-httpclient</groupId>
+						<artifactId>commons-httpclient</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.hbase</groupId>
+				<artifactId>hbase</artifactId>
+				<classifier>tests</classifier>
+				<version>${hbase.version}</version>
+				<scope>test</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-el</groupId>
+						<artifactId>commons-el</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-codec</groupId>
+						<artifactId>commons-codec</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.hadoop</groupId>
+						<artifactId>avro</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.thrift</groupId>
+						<artifactId>thrift</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jruby</groupId>
+						<artifactId>jruby-complete</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.mortbay.jetty</groupId>
+						<artifactId>jetty</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.mortbay.jetty</groupId>
+						<artifactId>jetty-util</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.mortbay.jetty</groupId>
+						<artifactId>jsp-2.1</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.mortbay.jetty</groupId>
+						<artifactId>jsp-api-2.1</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.mortbay.jetty</groupId>
+						<artifactId>servlet-api-2.5</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>tomcat</groupId>
+						<artifactId>jasper-compiler</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>tomcat</groupId>
+						<artifactId>jasper-runtime</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.google.protobuf</groupId>
+						<artifactId>protobuf-java</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.sun.jersey</groupId>
+						<artifactId>jersey-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.sun.jersey</groupId>
+						<artifactId>jersey-json</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.sun.jersey</groupId>
+						<artifactId>jersey-server</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>javax.ws.rs</groupId>
+						<artifactId>jsr311-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>javax.xml.bind</groupId>
+						<artifactId>jaxb-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>stax</groupId>
+						<artifactId>stax-api</artifactId>
 					</exclusion>
 					<exclusion>
 						<groupId>commons-httpclient</groupId>
