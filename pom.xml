@@ -5,7 +5,7 @@
 	<artifactId>hadoop-client</artifactId>
 	<packaging>pom</packaging>
 	<name>hadoop-client</name>
-	<version>cdh3u1-5.1</version>
+	<version>cdh3u1-6-SNAPSHOT</version>
 
 	<inceptionYear>2011</inceptionYear>
 	<url>http://ueshin.github.com/hadoop-client</url>
