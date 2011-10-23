@@ -1,11 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>st.happy_camper.hadoop</groupId>
 	<artifactId>hadoop-client</artifactId>
 	<packaging>pom</packaging>
 	<name>hadoop-client</name>
-	<version>cdh3u1-6-SNAPSHOT</version>
+	<version>cdh3u2-1-SNAPSHOT</version>
 
 	<inceptionYear>2011</inceptionYear>
 	<url>http://ueshin.github.com/hadoop-client</url>
@@ -127,10 +128,11 @@
 	</build>
 
 	<properties>
-		<hadoop.version>0.20.2-cdh3u1</hadoop.version>
-		<zookeeper.version>3.3.3-cdh3u1</zookeeper.version>
-		<hbase.version>0.90.3-cdh3u1</hbase.version>
-		<flume.version>0.9.4-cdh3u1</flume.version>
+		<hadoop.version>0.20.2-cdh3u2</hadoop.version>
+		<zookeeper.version>3.3.3-cdh3u2</zookeeper.version>
+		<hbase.version>0.90.4-cdh3u2</hbase.version>
+		<mahout.version>0.5-cdh3u2</mahout.version>
+		<flume.version>0.9.4-cdh3u2</flume.version>
 	</properties>
 
 	<dependencies>
@@ -140,12 +142,12 @@
 			<version>${hadoop.version}</version>
 			<exclusions>
 				<exclusion>
-					<groupId>xmlenc</groupId>
-					<artifactId>xmlenc</artifactId>
+					<groupId>com.cloudera.cdh</groupId>
+					<artifactId>hadoop-ant</artifactId>
 				</exclusion>
 				<exclusion>
-					<groupId>commons-logging</groupId>
-					<artifactId>commons-logging</artifactId>
+					<groupId>xmlenc</groupId>
+					<artifactId>xmlenc</artifactId>
 				</exclusion>
 				<exclusion>
 					<groupId>commons-net</groupId>
@@ -188,8 +190,8 @@
 					<artifactId>core</artifactId>
 				</exclusion>
 				<exclusion>
-					<groupId>com.cloudera.cdh</groupId>
-					<artifactId>hadoop-ant</artifactId>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -234,6 +236,10 @@
 			<scope>test</scope>
 			<exclusions>
 				<exclusion>
+					<groupId>com.cloudera.cdh</groupId>
+					<artifactId>hadoop-ant</artifactId>
+				</exclusion>
+				<exclusion>
 					<groupId>org.apache.ftpserver</groupId>
 					<artifactId>ftplet-api</artifactId>
 				</exclusion>
@@ -248,10 +254,6 @@
 				<exclusion>
 					<groupId>org.apache.ftpserver</groupId>
 					<artifactId>ftpserver-deprecated</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.cloudera.cdh</groupId>
-					<artifactId>hadoop-ant</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -280,10 +282,6 @@
 				<version>${zookeeper.version}</version>
 				<exclusions>
 					<exclusion>
-						<groupId>jline</groupId>
-						<artifactId>jline</artifactId>
-					</exclusion>
-					<exclusion>
 						<groupId>com.cloudera.cdh</groupId>
 						<artifactId>zookeeper-ant</artifactId>
 					</exclusion>
@@ -296,24 +294,20 @@
 				<version>${hbase.version}</version>
 				<exclusions>
 					<exclusion>
-						<groupId>com.google.guava</groupId>
-						<artifactId>guava</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>commons-el</groupId>
-						<artifactId>commons-el</artifactId>
-					</exclusion>
-					<exclusion>
 						<groupId>commons-codec</groupId>
 						<artifactId>commons-codec</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>commons-logging</groupId>
-						<artifactId>commons-logging</artifactId>
+						<groupId>commons-httpclient</groupId>
+						<artifactId>commons-httpclient</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>org.apache.hadoop</groupId>
+						<groupId>org.apache.avro</groupId>
 						<artifactId>avro</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.avro</groupId>
+						<artifactId>avro-ipc</artifactId>
 					</exclusion>
 					<exclusion>
 						<groupId>org.apache.thrift</groupId>
@@ -352,6 +346,10 @@
 						<artifactId>jasper-runtime</artifactId>
 					</exclusion>
 					<exclusion>
+						<groupId>org.jamon</groupId>
+						<artifactId>jamon-runtime</artifactId>
+					</exclusion>
+					<exclusion>
 						<groupId>com.google.protobuf</groupId>
 						<artifactId>protobuf-java</artifactId>
 					</exclusion>
@@ -380,12 +378,8 @@
 						<artifactId>stax-api</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>commons-lang</groupId>
-						<artifactId>commons-lang</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>commons-httpclient</groupId>
-						<artifactId>commons-httpclient</artifactId>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
@@ -398,20 +392,20 @@
 				<scope>test</scope>
 				<exclusions>
 					<exclusion>
-						<groupId>commons-el</groupId>
-						<artifactId>commons-el</artifactId>
-					</exclusion>
-					<exclusion>
 						<groupId>commons-codec</groupId>
 						<artifactId>commons-codec</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>commons-logging</groupId>
-						<artifactId>commons-logging</artifactId>
+						<groupId>commons-httpclient</groupId>
+						<artifactId>commons-httpclient</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>org.apache.hadoop</groupId>
+						<groupId>org.apache.avro</groupId>
 						<artifactId>avro</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.avro</groupId>
+						<artifactId>avro-ipc</artifactId>
 					</exclusion>
 					<exclusion>
 						<groupId>org.apache.thrift</groupId>
@@ -450,6 +444,10 @@
 						<artifactId>jasper-runtime</artifactId>
 					</exclusion>
 					<exclusion>
+						<groupId>org.jamon</groupId>
+						<artifactId>jamon-runtime</artifactId>
+					</exclusion>
+					<exclusion>
 						<groupId>com.google.protobuf</groupId>
 						<artifactId>protobuf-java</artifactId>
 					</exclusion>
@@ -478,8 +476,36 @@
 						<artifactId>stax-api</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>commons-httpclient</groupId>
-						<artifactId>commons-httpclient</artifactId>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.mahout</groupId>
+				<artifactId>mahout-core</artifactId>
+				<version>${mahout.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-dbcp</groupId>
+						<artifactId>commons-dbcp</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-pool</groupId>
+						<artifactId>commons-pool</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.thoughtworks.xstream</groupId>
+						<artifactId>xstream</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.lucene</groupId>
+						<artifactId>lucene-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.lucene</groupId>
+						<artifactId>lucene-analyzers</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
@@ -536,10 +562,6 @@
 					<exclusion>
 						<groupId>org.apache.avro</groupId>
 						<artifactId>avro-ipc</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.xerial.snappy</groupId>
-						<artifactId>snappy-java</artifactId>
 					</exclusion>
 					<exclusion>
 						<groupId>org.schwering.irc</groupId>
