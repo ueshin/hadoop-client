@@ -12,7 +12,7 @@ POMファイルに`parent`と`repository`を設定する。
     <parent>
 		<groupId>st.happy_camper.hadoop</groupId>
 		<artifactId>hadoop-client-scala</artifactId>
-		<version>cdh3u1-5.1</version>
+		<version>cdh3u2-1</version>
 	</parent>
 
 	<repositories>
