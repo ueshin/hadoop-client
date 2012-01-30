@@ -7,7 +7,8 @@
       <version>cdh3u1-4-SNAPSHOT</version>
       <version>cdh3u1-5-SNAPSHOT</version>
       <version>cdh3u2-1-SNAPSHOT</version>
+      <version>0.1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20111023102953</lastUpdated>
+    <lastUpdated>20120130143912</lastUpdated>
   </versioning>
 </metadata>
