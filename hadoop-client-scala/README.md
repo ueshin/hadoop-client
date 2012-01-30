@@ -7,12 +7,12 @@ Maven POM project for developing Hadoop clients in Scala.
 How to use
 ----------
 
-POMファイルに`parent`と`repository`を設定する。
+Configure `parent` and `repository` in the pom.xml file.
 
     <parent>
 		<groupId>st.happy_camper.hadoop</groupId>
 		<artifactId>hadoop-client-scala</artifactId>
-		<version>cdh3u2-1</version>
+		<version>0.1.0</version>
 	</parent>
 
 	<repositories>
