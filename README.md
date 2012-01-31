@@ -7,12 +7,12 @@ Maven POM project for developing Hadoop clients.
 How to use
 ----------
 
-POMファイルに`parent`と`repository`を設定する。
+Configure `parent` and `repository` in the pom.xml file.
 
     <parent>
 		<groupId>st.happy_camper.hadoop</groupId>
 		<artifactId>hadoop-client</artifactId>
-		<version>cdh3u2-1</version>
+		<version>cdh3u3-1</version>
 	</parent>
 
 	<repositories>
@@ -23,7 +23,7 @@ POMファイルに`parent`と`repository`を設定する。
 		</repository>
 	</repositories>
 
-必要なライブラリを`dependencies`に加える。
+Add needed libraries to `dependencies`.
 
 	<dependencies>
 		<dependency>
@@ -32,15 +32,15 @@ POMファイルに`parent`と`repository`を設定する。
 		</dependency>
 	</dependencies>
 
-現在利用出来るライブラリは次の通り。
+Now available libraries are as follows:
 
-- org.apache.hadoop : hadoop-core : 0.20.2-cdh3u2
-- org.apache.hadoop : hadoop-test : 0.20.2-cdh3u2
-- org.apache.hadoop : hadoop-mrunit : 0.20.2-cdh3u2
-- org.apache.zookeeper : zookeeper : 3.3.3-cdh3u2
-- org.apache.hbase : hbase : 0.90.4-cdh3u2
-- org.apache.mahout : mahout-core : 0.5-cdh3u2
-- com.cloudera : flume-core : 0.9.4-cdh3u2
+- org.apache.hadoop : hadoop-core : 0.20.2-cdh3u3
+- org.apache.hadoop : hadoop-test : 0.20.2-cdh3u3
+- org.apache.hadoop : hadoop-mrunit : 0.20.2-cdh3u3
+- org.apache.zookeeper : zookeeper : 3.3.4-cdh3u3
+- org.apache.hbase : hbase : 0.90.4-cdh3u3
+- org.apache.mahout : mahout-core : 0.5-cdh3u3
+- com.cloudera : flume-core : 0.9.4-cdh3u3
 
 
 License

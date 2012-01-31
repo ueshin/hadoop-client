@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<parent>
 		<groupId>st.happy_camper.hadoop</groupId>
 		<artifactId>hadoop-client</artifactId>
-		<version>cdh3u2-2-SNAPSHOT</version>
+		<version>cdh3u3-1-SNAPSHOT</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
@@ -11,6 +12,7 @@
 	<packaging>pom</packaging>
 	<name>hadoop-client-scala</name>
 
+	<description>Maven POM project for developing Hadoop clients in Scala.</description>
 	<scm>
 		<connection>scm:git://github.com/ueshin/hadoop-client.git</connection>
 		<developerConnection>scm:git:git@github.com:ueshin/hadoop-client.git</developerConnection>
@@ -93,7 +95,7 @@
 
 		<dependency>
 			<groupId>org.scalatest</groupId>
-			<artifactId>scalatest_2.9.1</artifactId>
+			<artifactId>scalatest_${scala.version}</artifactId>
 			<version>1.6.1</version>
 			<scope>test</scope>
 		</dependency>
