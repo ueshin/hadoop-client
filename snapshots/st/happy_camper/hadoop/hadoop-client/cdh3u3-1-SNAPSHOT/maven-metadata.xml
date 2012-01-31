@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>st.happy_camper.hadoop</groupId>
+  <artifactId>hadoop-client</artifactId>
+  <version>cdh3u3-1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20120131.135244</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20120131135244</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>cdh3u3-1-20120131.135244-1</value>
+        <updated>20120131135244</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
